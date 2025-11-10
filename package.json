@@ -1,0 +1,27 @@
+{
+  "name": "now-card-11",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Custom Card created for custom Task Board Component.",
+  "keywords": [
+    "ServiceNow",
+    "Next Experience UI Component",
+    "now-card-11"
+  ],
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=22"
+  },
+  "module": "src/index.js",
+  "dependencies": {
+    "@servicenow/now-card": "^19.8.2-ecd",
+    "@servicenow/sass-kit": "latest",
+    "@servicenow/ui-core": "24.1.1",
+    "@servicenow/ui-renderer-snabbdom": "24.1.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.25.7",
+    "ajv": "^6.12.6",
+    "sass": "1.53.0"
+  }
+}

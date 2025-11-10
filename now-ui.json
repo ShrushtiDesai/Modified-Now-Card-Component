@@ -1,0 +1,73 @@
+{
+  "components": {
+    "x-1837636-now-card-11": {
+      "innerComponents": [
+        "@servicenow/now-card"
+      ],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Now Card 14",
+        "tileIcon": "./tile-icon/generic-tile-icon.svg",
+        "description": "Custom Card Component",
+        "category": "primitives"
+      },
+      "properties":
+      [
+        {
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "fieldType": "choice",
+          "readOnly": false,
+          "typeMetadata": {
+            "choices": [
+              {
+                "label": "Red",
+                "value": "red"
+              },
+              {
+                "label": "Green",
+                "value": "green"
+              },
+              {
+                "label": "Yellow",
+                "value": "yellow"
+              },
+              {
+                "label": "Blue",
+                "value": "blue"
+              },
+              {
+                "label": "White",
+                "value": "white"
+              },
+              {
+                "label": "Black",
+                "value": "black"
+              }
+            ],
+            "schema": {
+              "type": "string"
+            }
+          },
+          "defaultValue": "white",
+          "description": "Apply a background color to the cards",
+          "valueType": "string"
+        },
+        {
+          "name": "cardData",
+          "label": "Card Data",
+          "fieldType": "string",
+          "description": "Array of card objects with header, content, and footer (Enter as JSON)",
+          "defaultValue": "[{\"header\":\"Card Header 1\",\"content\":\"Card Content 1\",\"footer\":\"Card Footer 1\"},{\"header\":\"Card Header 2\",\"content\":\"Card Content 2\",\"footer\":\"Card Footer 2\"}]",
+          "valueType": "string",
+          "mandatory": false,
+          "readOnly": false
+        }
+      ]
+    }
+  },
+  "scopeName": "x_1837636_now_ca_4"
+}
