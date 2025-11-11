@@ -9,7 +9,7 @@
           "global.core",
           "global.landing-page"
         ],
-        "label": "Now Card 14",
+        "label": "Now Card 18",
         "tileIcon": "./tile-icon/generic-tile-icon.svg",
         "description": "Custom Card Component",
         "category": "primitives"
@@ -66,7 +66,31 @@
           "mandatory": false,
           "readOnly": false
         }
-      ]
+      ],
+      "events": [
+        {
+          "name": "CARD_CLICKED",
+          "label": "Card Clicked",
+          "description": "Fired when a card is clicked",
+          "payload": [
+            {
+              "name": "cardIndex",
+              "label": "Card Index",
+              "description": "Index of the clicked card"
+            },
+            {
+              "name": "isClicked",
+              "label": "Is Clicked",
+              "description": "Whether the card is now in clicked state (grey)"
+            },
+            {
+              "name": "cardData",
+              "label": "Card Data",
+              "description": "Data of the clicked card (header, content, footer)"
+            }
+          ]
+        }
+      ]      
     }
   },
   "scopeName": "x_1837636_now_ca_4"
